@@ -121,7 +121,7 @@ function _plural(palavra: string): string {
   return plural !== "" ? plural : palavra;
 }
 
-export default function plural(palavras: string): string {
+export function pluralize(palavras: string): string {
   const palavrasPlural = palavras.split(" ");
 
   palavrasPlural.forEach((palavra, i) => {
